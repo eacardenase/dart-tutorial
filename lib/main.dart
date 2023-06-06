@@ -2,18 +2,25 @@ import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
 
+final String? someValue = null; // dynamic type if no type is specified
+
 void main() {
-  // runtime constant
-  final DateTime someValue2 = DateTime.now();
+  // Optional Variables
+  // String/int/bool and null
 
-  // compile time constant
-  const DateTime someValue3 = DateTime
-      .now(); // Error: Const variables must be initialized with a constant value.
+  int? optionalInt = 10;
+  String? optionalString = null;
+  String? anotherOptionalString; // null by default
 
-  /*
-  DateTime.now() value is known at runtime, but const is for variables
-  which values are known at compile time.
-  */
+  // print(optionalInt);
+  // print(optionalString);
+  // print(anotherOptionalString);
+
+  print(someValue);
+  print(someValue?.length);
+  // print(someValue!.length); // force unwrap & runtime error
+  // print(someValue.length); // compile error
+  print(someValue?.length ?? 0); // null coalesing
 
   runApp(
     const MaterialApp(
