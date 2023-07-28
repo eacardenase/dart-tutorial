@@ -2,28 +2,35 @@ import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
 
-final String? someValue = null; // dynamic type if no type is specified
-
 void main() {
-  // Optional Variables
-  // String/int/bool and null
+  // data types
 
-  int? optionalInt = 10;
-  String? optionalString = null;
-  String? anotherOptionalString; // null by default
+  final String pokemon = 'Ditto';
+  final int hp = 100;
+  final bool isAlive = true;
+  final List<String> abilities = ['impostor'];
+  final sprites = <String>['ditto/front.png', 'ditto/back.png'];
 
-  // print(optionalInt);
-  // print(optionalString);
-  // print(anotherOptionalString);
+  // dynamic == null by default
+  dynamic errorMessage = 'Hola';
+  errorMessage = true;
+  errorMessage = [1, 2, 3, 4, 5, 6];
+  errorMessage = {1, 2, 3, 4, 5, 6};
+  errorMessage = () => false;
+  errorMessage = null;
 
-  print(someValue);
-  print(someValue?.length);
-  // print(someValue!.length); // force unwrap & runtime error
-  // print(someValue.length); // compile error
-  print(someValue?.length ?? 0); // null coalesing
+  print("""
+  $pokemon
+  $hp
+  $isAlive
+  $abilities
+  $sprites
+  $errorMessage
+""");
 
   runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: HomeScreen(),
       ),
