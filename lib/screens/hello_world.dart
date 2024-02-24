@@ -14,11 +14,6 @@ class HelloWorld extends StatelessWidget {
     print('Hola, mi nombre es ${myName.toUpperCase()}.');
     print('Hola, mi nombre es ${myName.toLowerCase()}.');
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Hello World'),
-      ),
-      backgroundColor: Colors.cyan,
-    );
+    return const Text('Hello World');
   }
 }
