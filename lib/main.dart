@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 // import 'package:dart_tutorial/screens/maps.dart';
 // import 'package:dart_tutorial/screens/lists.dart';
 // import 'package:dart_tutorial/screens/functions.dart';
-import 'package:dart_tutorial/screens/named_parameters.dart';
+// import 'package:dart_tutorial/screens/named_parameters.dart';
+import 'package:dart_tutorial/screens/classes.dart';
 
 void main() {
   runApp(
@@ -14,7 +15,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
         body: Center(
-          child: NamedParameters(),
+          child: Classes(),
         ),
       ),
     ),
