@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 // import 'package:dart_tutorial/screens/hello_world.dart';
 // import 'package:dart_tutorial/screens/data_types.dart';
-import 'package:dart_tutorial/screens/maps.dart';
+// import 'package:dart_tutorial/screens/maps.dart';
+import 'package:dart_tutorial/screens/lists.dart';
 
 void main() {
   runApp(
@@ -11,7 +12,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
         body: Center(
-          child: Maps(),
+          child: Lists(),
         ),
       ),
     ),
