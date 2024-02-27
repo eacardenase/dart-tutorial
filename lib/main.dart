@@ -9,7 +9,8 @@ import 'package:flutter/material.dart';
 // import 'package:dart_tutorial/screens/classes.dart';
 // import 'package:dart_tutorial/screens/classes_override.dart';
 // import 'package:dart_tutorial/screens/named_constructors.dart';
-import 'package:dart_tutorial/screens/getters.dart';
+// import 'package:dart_tutorial/screens/getters.dart';
+import 'package:dart_tutorial/screens/assertions.dart';
 
 void main() {
   runApp(
@@ -18,7 +19,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
         body: Center(
-          child: Getters(),
+          child: Assertions(),
         ),
       ),
     ),
