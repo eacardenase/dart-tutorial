@@ -4,7 +4,7 @@ enum PlantType { nuclear, wind, water }
 
 abstract class EnergyPlant {
   double energyLeft;
-  PlantType type;
+  final PlantType type;
 
   EnergyPlant({
     required this.energyLeft,
@@ -25,6 +25,21 @@ class WindPlant extends EnergyPlant {
   }
 }
 
+class NuclearPlant implements EnergyPlant {
+  @override
+  double energyLeft;
+
+  @override
+  final PlantType type = PlantType.nuclear;
+
+  NuclearPlant({required this.energyLeft});
+
+  @override
+  void consumeEnergy(double amount) {
+    energyLeft -= (amount * 0.5);
+  }
+}
+
 class AbstractClasses extends StatelessWidget {
   const AbstractClasses({super.key});
 
@@ -41,12 +56,14 @@ class AbstractClasses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final windPlant = WindPlant(initialEnergy: 100);
+    final nuclearPlant = NuclearPlant(energyLeft: 1000);
 
     chargePhone(windPlant);
+    chargePhone(nuclearPlant);
 
-    print(windPlant);
     print(windPlant.energyLeft);
-    print(windPlant.type);
+    print(nuclearPlant.energyLeft);
+
     return const Text('Abstract Classes');
   }
 }
