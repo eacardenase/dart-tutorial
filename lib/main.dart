@@ -7,7 +7,8 @@ import 'package:flutter/material.dart';
 // import 'package:dart_tutorial/screens/functions.dart';
 // import 'package:dart_tutorial/screens/named_parameters.dart';
 // import 'package:dart_tutorial/screens/classes.dart';
-import 'package:dart_tutorial/screens/classes_override.dart';
+// import 'package:dart_tutorial/screens/classes_override.dart';
+import 'package:dart_tutorial/screens/named_constructors.dart';
 
 void main() {
   runApp(
@@ -16,7 +17,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
         body: Center(
-          child: ClassesOverride(),
+          child: NamedConstructors(),
         ),
       ),
     ),
