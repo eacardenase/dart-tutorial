@@ -16,7 +16,8 @@ import 'package:flutter/material.dart';
 // import 'package:dart_tutorial/screens/futures.dart';
 // import 'package:dart_tutorial/screens/async_await.dart';
 // import 'package:dart_tutorial/screens/exception_handling.dart';
-import 'package:dart_tutorial/screens/streams.dart';
+// import 'package:dart_tutorial/screens/streams.dart';
+import 'package:dart_tutorial/screens/async_asterisk.dart';
 
 void main() {
   runApp(
@@ -25,7 +26,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
         body: Center(
-          child: Streams(),
+          child: AsyncAsterisk(),
         ),
       ),
     ),
