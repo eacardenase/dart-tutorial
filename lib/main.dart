@@ -12,7 +12,8 @@ import 'package:flutter/material.dart';
 // import 'package:dart_tutorial/screens/getters.dart';
 // import 'package:dart_tutorial/screens/assertions.dart';
 // import 'package:dart_tutorial/screens/abstract_classes.dart';
-import 'package:dart_tutorial/screens/mixins.dart';
+// import 'package:dart_tutorial/screens/mixins.dart';
+import 'package:dart_tutorial/screens/futures.dart';
 
 void main() {
   runApp(
@@ -21,7 +22,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
         body: Center(
-          child: Mixins(),
+          child: Futures(),
         ),
       ),
     ),
